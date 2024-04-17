@@ -1,0 +1,1926 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.headerRight{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3rem;
+}
+
+.headerLeft{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 5rem;
+}
+
+.headerLeft .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+.headerLeft .logo img{
+    width: 8rem;
+    height: 4rem;
+    cursor: pointer;
+}
+
+.headerLeft .Language{
+    width: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 1rem;
+    background-color: rgb(22, 2, 75);
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.headerLeft .Language img{
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.headerLeft .Language span{
+    color: white;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.sandwich{
+    display: none;
+}
+
+.headerRight nav{
+    width: 100%;
+    height: 100%;
+}
+
+.headerRight nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.headerRight nav ul li{
+    list-style-type: none;
+}
+
+.headerRight nav ul li a{
+    color: white;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.headerRight nav ul li button{
+    border: 2px solid rgb(80, 3, 152);
+    color: white;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 0.6rem;
+    cursor: pointer;
+}
+
+.hero-section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background: black;
+}
+
+.main-carousal{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-slider{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0 0 0;
+}
+
+.main-slides{
+    width: 100%;
+    height: 60vh;
+    display: none;
+    align-items: center;
+    justify-content: left;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.main-slides img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    
+}
+
+.main-slide-1{
+    background: linear-gradient(150deg,rgb(3, 3, 100),rgb(118, 107, 69));
+}
+
+.main-slide-2{
+    background: linear-gradient(150deg,rgb(100, 3, 3),rgb(118, 107, 69));
+}
+
+.main-slide-3{
+    background: linear-gradient(150deg,rgb(19, 88, 3),rgb(118, 107, 69));
+}
+
+.main-slide-4{
+    background: linear-gradient(150deg,rgb(99, 5, 115),rgb(118, 107, 69));
+}
+
+.main-slide-cards{
+    width: 50%;
+    height: 80%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 8px;
+    z-index: 100;
+    margin-left: 3rem;
+}
+
+
+
+.main-slide-cards h3{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.main-slide-cards button{
+    font-size: 0.8rem;
+    border: 2px solid rgb(80, 3, 152);
+    color: white;
+    background: transparent;
+    border-radius: 5px;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+.directionbtns{
+    display: none;
+}
+
+.dots{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgb(161, 142, 142);
+}
+
+.select-btns{
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.colorchage{
+    background-color: white !important;
+}
+
+/* Brand Slider */
+
+.brand-slider{
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-about{
+    width: 30rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-division{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-title{
+    font-size: 1.6rem;
+    text-wrap: nowrap;
+    display: flex;
+    justify-self: center;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+}
+
+.brand-title h2{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.brand-notes{
+    width: 23rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }to{
+        transform: translateX(100%);
+    }
+}
+
+.infinity-slider{
+    overflow: hidden;
+    min-width: 100%;
+    display: inline-flex;
+    margin-bottom: 5rem;
+}
+
+.brand-carousal{
+    display: flex;
+    height: 10rem;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    white-space: nowrap;
+    animation:  50s slide infinite linear;
+    border: none;
+    outline: none;
+}
+
+.brand-carousal img{
+    width: 8rem;
+    height: auto;
+    object-fit: cover;
+    margin: 0 1rem;
+    overflow: hidden;
+}
+
+/* card-area */
+
+.card-area{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 57);
+    color: white;
+}
+
+.Subscribe-card-title{
+    padding: 1.5rem 0;
+}
+
+.Subscribe-card-title h3{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.Subscribe-card-title h3 span{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.card-area-middle{
+    display: flex;
+    width: 60%;
+    align-items: start;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.card-area-toggle{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-area-toggle ul li{
+    list-style-type: none;
+    margin: 2rem 0;
+    text-align: center;
+    cursor: pointer;
+    color: rgb(139, 134, 134);
+}
+
+.card-variety{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.real-cards{
+    width: 25rem;
+    height: 15rem;
+    border-radius: 12px;
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1rem;
+    color: white;
+    margin-top: 1rem;
+}
+
+.real-cards span{
+    width: 70%;
+    font-size: 0.8rem;
+}
+
+.real-cards button{
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: rgb(0, 0, 255);
+    cursor: pointer;
+    text-shadow: 2px 2px 4px black;
+}
+
+.Membership-card{
+    background: linear-gradient(150deg, black, rgb(56, 146, 248));
+}
+
+.Silver-card{
+    background: linear-gradient(150deg, black, silver);
+}
+
+.Gold-card{
+    background: linear-gradient(150deg, black, gold);
+}
+
+.Platinum-card{
+    background: linear-gradient(150deg, black, grey);
+}
+
+.join-program{
+    width: 70%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.join-program button{
+    font-size: 0.8rem;
+    color: white;
+    padding: 8px 16px;
+    border: 2px solid rgb(80, 3, 152);
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.border-class{
+    border-bottom: 2px solid blue;
+    padding-bottom: 5px;
+    color: white !important;
+}
+
+
+/* Discover Section */
+
+.discover-section{
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    color: white !important;
+    position: relative;
+}
+
+.offers, .offers ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.offers ul li{
+    list-style: none;
+    font-size: 0.8rem;
+    color: rgb(139, 134, 134);
+    cursor: pointer;
+}
+
+.dis-carousal{
+    width: 60vw;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.card-wraper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card{
+    background-color: transparent !important;
+}
+
+.discover-card{
+    width: 12rem !important;
+    height: 14rem;
+    border-radius: 12px 12px 0 0;
+    position: relative;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    color: white !important;
+}
+
+.discover-image{
+    width: 100%;
+    height: 100%;
+}
+
+.discover-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.discover-card-body{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(32, 26, 66);
+    padding: 8px 0;
+    color: white !important;
+}
+
+.discover-card-body h5{
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 5px 0;
+}
+
+.discover-card-body p{
+    font-size: 0.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.discover-card-body span{
+    font-size: 0.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.discover-card-body hr{
+    width: 90%;
+    height: 3px;
+    background-color: grey;
+    padding: 0;
+    margin: 5px;
+}
+
+.newWhites{
+    color: white !important;
+}
+
+.direction-buttons{
+    position: absolute;
+    right: 15%;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.direction-buttons button{
+    background-color: rgb(54, 54, 136);
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: none;
+}
+
+/* Enroll Page */
+
+.enroll{
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    padding: 5rem 5rem;
+}
+
+.enroll h3{
+    font-size: 1.6rem;
+    color:white;
+    font-weight: 400;
+}
+
+.enroll h3 span{
+    font-size: 1.6rem;
+    color:white;
+    font-weight: 600;
+}
+
+.Enroll-content{
+    width: 100%;
+    height: 95%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.Enroll-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 13rem;
+    height: 13rem;
+    background-color: transparent;
+    position: relative;
+}
+
+.Enroll-card .EnrollBG{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+}
+
+.enroll-icon{
+    width: 40%;
+    height: 40%;
+    z-index: 10;
+}
+
+.enroll-details{
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(26, 25, 74, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.7rem;
+    border-radius: 14px;
+    border: 1px solid rgb(78, 72, 110);
+    padding: 0 1rem;
+}
+
+.enroll-details span{
+    text-align: center;
+}
+
+.dotted-line{
+    width: 5rem;
+    height: 2.3rem;
+    border-top: 2px dotted rgb(45, 24, 162);
+}
+
+/* Members Page */
+
+.Members{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+.member-child{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.member-bgm{
+    width: 110%;
+    height: 140%;
+    position: absolute;
+    bottom: 30%;
+    left: -5%;
+    transform: translateX(50%);
+    transform: translateY(50%);
+    border-radius: 50%;
+    background-color: rgb(6, 6, 60);
+}
+
+.member-child-image{
+    width: 50%;
+    height: 50%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.member-child-image img{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-content{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1rem;
+    z-index: 100;
+}
+
+.member-content h3{
+    font-size: 1.6rem;
+}
+
+.member-content span{
+    font-size: 0.8rem;
+    width: 70%;
+}
+
+.member-content button{
+    width: 12rem;
+    height: 2.8rem;
+    color: white;
+    background-color: transparent;
+    border: 2px solid rgb(102, 7, 211);
+    border-radius: 6px;
+}
+
+/* Marqee Section */
+
+.margee-section{
+    max-width: 100vw;
+    height: 3rem;
+    background-color: rgb(56, 56, 114);
+    overflow: hidden !important;
+}
+
+.scrolling-text{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    animation: scroll 30s linear infinite;
+    gap: 3rem;
+}
+
+.scrolling-text span{
+    font-size: 0.9rem;
+    color: white;
+    width: 25rem;
+}
+
+.dot-div{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    margin: 0 0.5rem 0 2rem;
+}
+
+/* Rewards Section */
+
+.rewards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 60vh;
+    background-color: rgb(1, 1, 27);
+}
+
+.rewards-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.rewards-left .span1{
+    font-size: 1.6rem;
+}
+
+.rewards-left .span2{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.rewards-left button{
+    font-size: 0.8rem;
+    padding: 12px;
+    background-color: transparent;
+    border-radius: 6px;
+    border: 2px solid blueviolet;
+    color: white;
+}
+
+.rewards-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rewards-right img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+}
+
+/* ourEncircle */
+
+.ourEncircle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100vw;
+    min-width: 100vw;
+    height: 100vh;
+    background-color: rgb(1, 1, 27);
+    overflow-x: hidden !important;
+}
+
+.ourEncircle-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.ourEncircle-content-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: white;
+}
+
+.ourEncircle-content-child1 h3{
+    font-size: 1.6rem;
+}
+
+.ourEncircle-content-top span, p{
+    color: grey;
+    font-size: 0.8rem;
+}
+
+.ourEncircle-content-bottom{
+    width: 30rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.ourEncircle-content-bottom img{
+    width: 13rem;
+    height: 13rem;
+    padding: 2rem;
+    z-index: 100;
+}
+
+.ourEncircle-content-bottom button{
+    background-color: rgb(33, 33, 94);
+    width: 2.5rem;
+    height: 2.5rem;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.ourEncircle-content-bottom #insta{
+    position: absolute;
+    right:15%;
+    bottom: 30%;
+}
+
+.ourEncircle-content-bottom #yt{
+    position: absolute;
+    left: 15%;
+    top: 25%;
+}
+
+.ourEncircle-content-bottom #linkdin{
+    position: absolute;
+    right: 15%;
+    top: 25%;
+}
+
+.ourEncircle-content-bottom #fb{
+    position: absolute;
+    top: 5%;
+}
+
+.ourEncircle-content-bottom #twitter{
+    position: absolute;
+    left:15%;
+    bottom: 30%;
+}
+
+.socialbgm{
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(255, 217, 0, 0) 60%, rgb(33, 24, 95));
+    width: 40rem;
+    height: 20rem;
+    border-radius: 80%;
+    animation: fadeBackground;
+}
+
+/* timeZone */
+
+.timeZone{
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(1, 1, 27);
+}
+
+.timerLeft{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.timerLeft h3{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.timerLeft span{
+    width: 16rem;
+    font-size: 0.8rem;
+    color: grey;
+}
+
+.timerLeft span small{
+    font-size: 0.8rem;
+    color: white;
+    font-weight: 400;
+}
+
+.timerLeft button{
+    font-size: 0.8rem;
+    padding: 8px;
+    background-color: transparent;
+    border-radius: 6px;
+    border: 2px solid blueviolet;
+    color: white;
+    margin-top: 2rem;
+}
+
+.timerRight{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.timerRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.timer-title{
+    width: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 1rem;
+}
+
+.timer-title h6{
+    font-size: 1rem;
+    color: blue;
+}
+
+.timer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer div{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.timer-box{
+    background-color: rgb(18, 18, 92);
+    border-radius: 5px;
+}
+
+.timer-box h2{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+/* giftCard-section */
+
+.giftCard-section{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: rgb(7, 7, 53);
+}
+
+.gift-title{
+    width: 20rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.gift-card{
+    width: 28rem;
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: white;
+    background-color: black;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.gift-card #card-icon-img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: transparent;
+    z-index: 100;
+}
+
+.gift-card #card{
+    color: rgb(195, 169, 23);
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    z-index: 100;
+}
+
+.gift-card h6{
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 400;
+    z-index: 100;
+}
+
+.card-logos{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 2rem;
+    color: grey;
+}
+
+#cardbgm-img{
+    position: absolute;
+    top: 0%;
+    width: 18rem;
+    height:18rem;
+    object-fit: cover;
+    opacity: 0.15;
+    transform: rotate(300deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Global Research */
+
+.globalReach{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: rgb(7, 7, 53);
+    position: relative;
+    overflow: hidden;
+}
+
+.globe-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    z-index: 100;
+}
+
+.globe-left .globe-img-sizing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.6rem;
+    width: 25rem;
+    height: 25rem;
+    position: relative;
+}
+
+.globe-left span{
+    background-color: black;
+    padding: 5px 12px;
+    border-radius: 12px;
+}
+
+.country-icons{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.globe-left #img{
+    width: 25rem;
+    height: 25rem;
+    opacity: 0.2;
+}
+
+#uae-icon{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    right: 20%;
+    bottom:28%;
+}
+
+#usa-icon{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    left: 15%;
+    bottom: 45%;
+}
+
+#NewZealand{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    bottom: 20%;
+    left: 35%;
+}
+
+#australia{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 25%;
+    right: 21%;
+}
+
+#singapore{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    left: 37%;
+    top: 15%;
+}
+
+.globe-right{
+    width: 50%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    z-index: 100;
+}
+
+.globe-content{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.globe-right h3{
+    font-size: 1.6rem;
+}
+
+.globe-right span{
+    width: 15rem;
+    text-wrap: wrap;
+    font-size: 0.8rem;
+    color: grey;
+}
+
+.global-reach-bgm{
+    width: 120%;
+    height: 160%;
+    position: absolute;
+    bottom: 20%;
+    left: -10%;
+    transform: translateX(50%);
+    transform: translateY(50%);
+    border-radius: 50%;
+    background-color: rgb(8, 8, 70);
+}
+
+/* Footer Section */
+
+footer{
+    width: 100%;
+    min-height: 40vh;
+    background-color: rgb(7, 7, 53);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.footer-top{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-top h3{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.footer-top .titan-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.titan-icons img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.footer-bottom{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+}
+
+.footer-logo{
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo img{
+    width: 4rem;
+    height: 4rem;
+}
+
+.footer-logo span{
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.footer-social{
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.footer-social-icons{
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-social span{
+    font-size: 0.8rem;
+    color: grey;
+}
+
+.footer-social-icons button{
+    background-color: rgb(28, 28, 114);
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    color: white;
+    border-radius: 50%;
+}
+
+.footer-contact-zone h6{
+    color: rgb(84, 84, 195);
+    font-size: 0.8rem;
+}
+
+.footer-contact-zone p{
+    font-size: 0.8rem;
+    color: grey;
+}
+
+.footer-contact-zone p span{
+    color: white;
+}
+
+.gethelp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    color: grey;
+    font-size: 0.8rem;
+}
+
+.gethelp a{
+    color: grey;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+@keyframes fadeBackground {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 0% 100%;
+    }
+  }
+
+@keyframes scroll {
+    from {
+      transform: translateX(0%);
+    }
+    
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+.activation{
+    display: flex !important;
+}
+
+.deactivate{
+    display: none !important;
+}
+
+@media (max-width:1200px) {
+    header{
+        width: 100%;
+        height: 5rem;
+    }
+    
+    .headerRight{
+        width: 65%;
+        height: 100%;
+        padding: 0 2rem;
+    }
+    
+    .headerLeft{
+        width: 25%;
+        padding-left: 3rem;
+    }
+
+    .card-area-toggle{
+        justify-content: center;
+    }
+
+    .variety-right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Subscribe-card-title h3{
+        font-size: 1.2rem;
+    }
+    
+    .Subscribe-card-title h3 span{
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .card-area-middle{
+        width: 80%;
+    }
+
+    .enroll-icon{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .footer-bottom{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:991px) {
+
+    header{
+        height: auto !important;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .Language{
+        display: none !important;
+    }
+
+    .headerRight{
+        display: none;
+        width: 100%;
+    }
+
+    .headerRight nav ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .headerLeft{
+        width: 100%;
+        height: 5rem;
+        justify-content: space-between;
+        padding: 0 3rem;
+    }
+
+    .sandwich{
+        display: flex;
+    }
+
+    .sandwich button{
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.8rem;
+        color: white;
+        background-color: transparent;
+        border: none;
+    }
+
+    .main-slide-cards{
+        height: 60%;
+        background-color: black;
+        margin-left: 3rem;
+    }
+    
+    
+    
+    .main-slide-cards h3{
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .main-slide-cards span{
+        font-size: 0.8rem;
+    }
+
+    
+    .main-slide-cards button{
+        font-size: 0.6rem;
+        padding: 6px 12x;
+    }
+
+    .scrolling-text span{
+        font-size: 0.8rem;
+        width: 15rem !important;
+        text-wrap: nowrap;
+        /* margin: 0 1rem; */
+    }
+
+    .footer-bottom{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:768px) {
+    .main-slide-cards{
+        width: 60%;
+        margin-left: 3rem;
+    }
+
+    .main-slides{
+        height: 50vh;
+    }
+
+    .real-cards{
+        width: 23rem;
+        height: 13rem;
+        border-radius: 8px;
+        padding: 1rem;
+        gap: 1rem;
+        color: white;
+        margin-top: 1rem;
+    }
+
+    .real-cards h3{
+        font-size: 1.3rem;
+    }
+    
+    .real-cards span{
+        width: 70%;
+        font-size: 0.8rem;
+    }
+    
+    .real-cards button{
+        font-size: 1rem;
+        text-shadow: 2px 2px 4px black;
+    }
+
+    .card-area{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(0, 0, 57);
+        color: white;
+    }
+
+    .card-area-toggle{
+        height: 15rem;
+        width: 30%;
+    }
+
+    .card-area-toggle ul{
+        padding: 0;
+        margin: 0;
+        gap: 0;
+    }
+
+    .card-area-toggle ul li{
+        margin: 1rem 0;
+        font-size: 0.7rem;
+    }
+
+    .variety-right{
+        width: 60%;
+        align-items: start;
+    }
+
+    .card-area-middle{
+        width: 100%;
+    }
+
+    .enroll h3{
+        font-size: 1.2rem;
+    }
+    
+    .enroll h3 span{
+        font-size: 1.2rem;
+    }
+
+    .Enroll-content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .dotted-line{
+        height: 5rem;
+        width: 0.1rem;
+        border-top: none;
+        border-right: 2px dotted rgb(45, 24, 162);
+    }
+
+    .Enroll-card{
+        box-shadow: 2px 2px 4px 4px rgb(3, 60, 94);
+        border-radius: 12px;
+    }
+
+    .enroll-icon{
+        width: 40% !important;
+        height: 40% !important;
+    }
+
+    .member-child{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .member-child-image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .member-child-image img{
+        width: 80%;
+        height: 80%;
+    }
+
+    .member-bgm{
+        width: 150%;
+        height: 140%;
+        left: -25%;
+    }
+
+    .member-content{
+        width: 60%;
+        height: 60%;
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .margee-section{
+        display: none;
+    }
+
+    .rewards{
+        flex-direction: column;
+    }
+
+    .rewards-left{
+        margin-top: 1rem;
+    }
+
+    .rewards-left .span1{
+        font-size: 1.2rem;
+    }
+    
+    .rewards-left .span2{
+        font-size: 1.2rem;
+    }
+    
+    .rewards-left button{
+        font-size: 0.6rem;
+        padding: 8px;
+        border-radius: 4px;
+        margin-bottom: 2rem;
+    }
+    
+    .rewards-right img{
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .timerLeft h3, .gift-title h3{
+        font-size: 1.2rem;
+    }
+
+    .timeZone{
+        flex-direction: column;
+    }
+
+    .timerLeft, .timerRight{
+        margin-bottom: 2rem;
+    }
+
+    .gift-card{
+        width: 24rem;
+        height: 13.5rem;
+        gap: 0.8rem;
+        border-radius: 12px;
+    }
+    
+    .gift-card #card-icon-img{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    
+    .gift-card #card{
+        color: rgb(195, 169, 23);
+        font-size: 0.8rem;
+        letter-spacing: 3px;
+        }
+    
+    .gift-card h6{
+        font-size: 0.8rem;
+    }
+    
+    .card-logos{
+        font-size: 0.8rem;
+    }
+    
+    #cardbgm-img{
+        width: 14rem;
+        height:14rem;
+    }
+
+    .globalReach{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .globe-left{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .globe-right{
+        width: 100%;
+    }
+
+    .globe-content{
+        width: 80%;
+        align-items: center;
+    }
+
+    .globe-content span{
+        width: 80%;
+        text-align: center;
+    }
+
+    .globe-content h3{
+        font-size: 1.2rem;
+    }
+
+    .global-reach-bgm{
+        width: 180%;
+        height: 160%;
+        bottom: 20%;
+        left: -40%;
+    }
+
+    .footer-bottom{
+        padding: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-social{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .footer-social-icons{
+        gap: 1rem;
+    }
+
+    .footer-contact-zone{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gethelp{
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    .card-wraper{
+        display: block;
+    }
+
+    .card{
+        margin: 2rem 0;
+    }
+
+    .offers ul{
+        gap: 1rem;
+    }
+
+    .offers ul li{
+        font-size: 0.6rem;
+    }
+
+}
+
+@media (max-width:576px){
+    .hero-section{
+        display: none !important;
+    }
+
+    .real-cards{
+        width: 20rem;
+        height: 11rem;
+    }
+
+    .real-cards h3{
+        font-size: 1.1rem;
+        margin-top: 1rem;
+    }
+    
+    .real-cards button{
+        font-size: 0.8rem;
+        text-shadow: 2px 2px 4px black;
+    }
+
+    .Subscribe{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Subscribe h3{
+        width: 60%;
+        text-wrap: wrap;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .join-program{
+        width: 100%;
+    }
+
+    .member-content h3{
+        font-size: 1.2rem;
+    }
+
+    .member-child-image{
+        width: 70%;
+        height: 70%;
+    }
+
+    .member-child-image img{
+        width: 70%;
+        height: 70%;
+    }
+
+
+}
+
+@media (max-width:450px){
+    .Subscribe h3{
+        font-size: 1.1rem;
+        width: 70%;
+    }
+    .real-cards{
+        width: 18rem;
+        height: 11rem;
+    }
+}
+
+@media (min-width:576px){
+
+    .carousel-item{
+        display: block;
+        margin-right: 0;
+        margin-left: 0;
+        flex: 0 0 calc(100%/3);
+    }
+}
